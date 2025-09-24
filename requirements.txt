@@ -1,0 +1,5 @@
+python>=3.12
+colorama==0.4.6
+requests==2.31.0
+python-telegram-bot==20.7
+pycryptodome==3.19.1
