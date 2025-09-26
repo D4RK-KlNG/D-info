@@ -22,4 +22,4 @@ else
 fi
 
 echo "Running..."
-python3 start.py
+python3 Ban.py
