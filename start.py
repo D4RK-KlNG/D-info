@@ -14,9 +14,10 @@ def show_menu():
     print(Fore.YELLOW + "==================================")
     print("              Menu ")
     print("==================================")
-    print("1. Number Info")
-    print("2. vehicle Info")
-    print("3. UPI id Info")
+    print("1. insta scrapper")
+    print("2. Whatsapp ban v3")
+    print("3. insta ban v2")
+    print("4. OTP bomb")
     print("==================================" + Style.RESET_ALL)
     input(Fore.YELLOW + "Choose any option > " + Style.RESET_ALL)  
 
