@@ -1,7 +1,7 @@
 # D-info
 
-> vehicle info
+> insta ban
 
-> number Info
+> whatsapp ban
 
-> upi id info
+> otp bomb 
